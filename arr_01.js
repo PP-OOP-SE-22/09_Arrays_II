@@ -2,25 +2,25 @@
 
 // push() / pop()
 // push --> Daten rein ... (+)
-// let arr = [];
-// output(arr);
-// arr.push("Ich");
-// output(arr);
-// arr.push("bin");
-// output(arr);
-// arr.push("Max");
-// output(arr);
+let arr = [];
+output(arr);
+arr.push("Ich");
+output(arr);
+arr.push("bin");
+output(arr);
+arr.push("Max");
+output(arr);
 
-// output(arr[arr.length-1]);
+output(arr[arr.length-1]);
 
 // pop() --> Daten raus ... (-)
 
-// output(arr.pop());
-// output(arr);
-// output(arr.pop());
-// output(arr);
-// output(arr.pop());
-// output(arr);
+output(arr.pop());
+output(arr);
+output(arr.pop());
+output(arr);
+output(arr.pop());
+output(arr);
 
 /*
 Aufgabe:
@@ -43,13 +43,14 @@ const tags = [  "html","head","head","body",
 let stack = [];
 
 // Modul: HTML-Synthese | Test
-output(getHTML());
+// output(getHTML());
 function getHTML() {
 
     let htmlStr = "";
 
     for (let i = 0; i < tags.length; i++) {
         if (isOpenElement(tags[i])) 
+        // if(true)
         // if(false)
         { 
             htmlStr += getElement(tags[i],"open");
@@ -97,6 +98,6 @@ function getElement(tag,op) {
 
 // Modul: Ausgabe | Test
 //output("hi");
-function output(inputData) {
-    console.log(inputData);
+function output(outputData) {
+    console.log(outputData);
 }
