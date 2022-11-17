@@ -43,7 +43,7 @@ const tags = [  "html","head","head","body",
 let stack = [];
 
 // Modul: HTML-Synthese | Test
-// output(getHTML());
+output(getHTML());
 function getHTML() {
 
     let htmlStr = "";
